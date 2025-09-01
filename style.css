@@ -21,7 +21,7 @@ body {
   color: lightgray;
   margin: 10px;
   padding: 20px;
-  font-size: 20px;
+  font-size: 22px;
   text-decoration:none;
 }
 
@@ -86,6 +86,10 @@ h2 {
 
 .container {
   display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 /* About Me */
@@ -102,16 +106,18 @@ h2 {
 }
 
 #about-me p {
-  font-size: 25px;
+  font-size: 22px;
   color: rgb(128, 128, 128);
   margin-top: -1cm;
+  margin-bottom: -1cm;
+  max-width: 1200px;
 }
 
 .profile_image {
   width: 400px;
   height: fit-content;
   vertical-align: middle;
-  margin: 5px;
+  margin: 10px;
 }
 
 /* Skills */
@@ -128,14 +134,14 @@ h2 {
   border-radius: 6px;
   text-align: center;
   margin: 50px;
-  padding: 10px;
+  padding: 5px;
   width: 2in;
   font-size: 20px;
   box-shadow: 0 3px 10px gray;
 }
 
 .skill img {
-  height: 90px;
+  height: 100px;
   align-items: center;
 }
 
@@ -166,16 +172,17 @@ h2 {
 .projects-container {
   margin-top: 30px;
   margin-left: 60px;
+  margin-right: 60px;
 }
 
 .projects-container hr {
   border: 1px solid lightgray;
   width: 75%;
-  margin-left: 5cm;
+  margin-left: 3cm;
 }
 
 .project-card {
-  margin: 0 15px 15px 30px;
+  margin: 0 15px 15px 0px;
   padding-bottom: 5px;
 }
 
