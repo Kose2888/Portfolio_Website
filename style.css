@@ -1,11 +1,20 @@
-body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: sans-serif;
+      background: linear-gradient(-30deg, #050505, #0a0a12, #101020, #17172a);
+      background-size: 300% 300%;
+      animation: gradientShift 5s ease infinite;
+    }
 
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
 /* Navigation Bar */
 
 #home {
-  background-color:  rgb(12, 107, 196);
   padding-bottom: 1cm;
   margin-left:-1cm;
   margin-right:-1cm;
@@ -15,6 +24,8 @@ body {
   height: 5mm;
   display: flex;
   justify-content:space-between;
+  border: 2px solid rgb(43, 43, 43);
+  background-color: rgba(8, 3, 34, 0.493);
  }
 
 .topmenu {
@@ -26,7 +37,7 @@ body {
 }
 
 .topmenu:hover {
-  color: white;
+  color: rgb(12, 107, 196);
   font-weight: bolder;
   text-decoration: underline;
 }
@@ -37,7 +48,6 @@ body {
 }
 
 .profile_name {
-  float: left;
   padding-left: 2cm;
   font-size: 25px;
   color: lightgray;
@@ -51,10 +61,10 @@ body {
   flex-direction: row;
 }
 
+
 .contact_info img {
   width:25px;
   margin-right: 10px;
-  float:left;
 }
 
 /* Titles */
@@ -80,6 +90,7 @@ h2 {
   margin-bottom: 20px;
   animation-duration: 5s;
   position: relative;
+  color: lightgray;
 }
 
 /* Used in the About Me sections */
@@ -107,7 +118,7 @@ h2 {
 
 #about-me p {
   font-size: 22px;
-  color: rgb(128, 128, 128);
+  color: lightgray;
   margin-top: -1cm;
   margin-bottom: -1cm;
   max-width: 1200px;
@@ -129,7 +140,8 @@ h2 {
 }
 
 .skill {
-  border: 1px solid gray;
+  background-color: rgba(8, 3, 34, 0.493);
+  border: 1px solid rgb(12, 107, 196);
   display: block;
   border-radius: 6px;
   text-align: center;
@@ -137,7 +149,8 @@ h2 {
   padding: 5px;
   width: 2in;
   font-size: 20px;
-  box-shadow: 0 3px 10px gray;
+  box-shadow: 0 3px 10px rgb(12, 107, 196);
+  color: lightgray;
 }
 
 .skill img {
@@ -176,14 +189,15 @@ h2 {
 }
 
 .projects-container hr {
-  border: 1px solid lightgray;
-  width: 75%;
-  margin-left: 3cm;
+  border: 1px solid rgb(12, 107, 196);
+  width: 80%;
+  align-items: center;
 }
 
 .project-card {
   margin: 0 15px 15px 0px;
   padding-bottom: 5px;
+  color: lightgray;
 }
 
 .project-card h3 {
@@ -212,12 +226,13 @@ h2 {
   text-align: left;
   width: 21.875rem;
   padding: 1rem;
-  background-color: #fff;
+  background-color: none;
+  color: lightgray;
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
   margin: 10px;
-  border:1px solid gray;
+  border:1px solid rgb(12, 107, 196);
   font-size: 18px;
   height:150px
 }
@@ -234,13 +249,13 @@ h2 {
   width: 48px;
   height: 48px;
   border-radius: 100%;
-  background-color: rgb(12, 107, 196);
+  background-color: rgba(8, 3, 34, 0.493);
   display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
   right: 3%;
-  bottom: 3%;
+  bottom: 8%;
   cursor: pointer;
 }
 
@@ -294,6 +309,8 @@ input, textarea {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
   margin: 10px;  
   width:100%;
+  background-color: transparent;
+  color: lightgray;
 }
 
 fieldset {
@@ -303,14 +320,15 @@ fieldset {
   padding: 25px; 
   margin-left: 50px; 
   margin-right: 50px;   
-  border: thin solid white;
+  margin-bottom: 75px;
+  border: thin solid rgb(12, 107, 196);
   width: 50%;
 }
 
 /* Buttons */
 
 button {
-  background-color: #fff;
+  background-color: transparent;
   border: 1px solid rgb(12, 107, 196);
   color: rgb(12, 107, 196);
   display: block;
@@ -330,4 +348,19 @@ button:hover {
   border-radius: 6px;
   text-align: center;
   cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  color: lightgray;
+  margin-left: -1cm;
+  margin-right: -1cm;
+  border: 2px solid rgb(43, 43, 43);
+  background-color: rgba(8, 3, 34, 0.493);
+}
+
+footer p {
+  margin-left: 5%;
+  margin-right: 5%;
 }
